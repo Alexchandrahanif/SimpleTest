@@ -22,7 +22,7 @@ module.exports = {
         allowNull: false,
       },
       tanggal_lahir: {
-        type: Sequelize.STRING,
+        type: Sequelize.DATE,
         allowNull: false,
       },
       alamat: {

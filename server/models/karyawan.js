@@ -53,7 +53,7 @@ module.exports = (sequelize, DataTypes) => {
         },
       },
       tanggal_lahir: {
-        type: DataTypes.STRING,
+        type: DataTypes.DATE,
         allowNull: false,
         validate: {
           notEmpty: {

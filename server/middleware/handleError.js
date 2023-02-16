@@ -28,6 +28,12 @@ const handleError = (err, req, res, next) => {
   } else if (err.name === "Departement is Required") {
     code = 404;
     message = "Departement is Required";
+  } else if (err.name === "Jabatan is Required") {
+    code = 404;
+    message = "Jabatan is Required";
+  } else if (err.name === "Karyawan is Required") {
+    code = 404;
+    message = "Karyawan is Required";
   } else if (err.name === "JsonWebTokenError") {
     code = 401;
     message = "Invalid token";
