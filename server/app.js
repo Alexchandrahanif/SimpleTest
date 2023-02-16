@@ -1,7 +1,9 @@
-const router = require("./router");
+require("dotenv").config();
 
+const router = require("./router");
 const cors = require("cors");
 const express = require("express");
+const handleError = require("./middleware/handleError");
 
 const app = express();
 const port = 3000;
@@ -11,6 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use("/", router);
+app.use(handleError);
 
 app.listen(port, () => {
   console.log(`semoga bisa maksimal, amin`);

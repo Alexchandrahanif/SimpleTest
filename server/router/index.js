@@ -1,9 +1,9 @@
+const router = require("express").Router();
+
 const adminRuter = require("./admin");
 const departementRouter = require("./departement");
 const jabatanRouter = require("./jabatan");
 const karyawanRouter = require("./karyawan");
-
-const router = require("express").Router();
 
 router.use("/admin", adminRuter);
 router.use("/departemen", departementRouter);
