@@ -63,13 +63,6 @@ class Controller {
       next(error);
     }
   }
-
-  static async getAll(req, res, next) {
-    try {
-    } catch (error) {
-      next(error);
-    }
-  }
 }
 
 module.exports = Controller;

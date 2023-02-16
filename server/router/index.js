@@ -6,7 +6,7 @@ const jabatanRouter = require("./jabatan");
 const karyawanRouter = require("./karyawan");
 
 router.use("/admin", adminRuter);
-router.use("/departemen", departementRouter);
+router.use("/departement", departementRouter);
 router.use("/jabatan", jabatanRouter);
 router.use("/karyawan", karyawanRouter);
 

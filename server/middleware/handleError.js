@@ -25,6 +25,9 @@ const handleError = (err, req, res, next) => {
   } else if (err.name === "Email is Required") {
     code = 400;
     message = "Email is required";
+  } else if (err.name === "Departement is Required") {
+    code = 404;
+    message = "Departement is Required";
   } else if (err.name === "JsonWebTokenError") {
     code = 401;
     message = "Invalid token";
